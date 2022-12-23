@@ -10,6 +10,6 @@ find . -name ".*" -printf '%f\n' | grep -ve "^\.$" | grep -ve "^\.git$" \
 # load extra configs
 cat >> ~/.zshrc << TEXT
 for file in \`ls ~/.dotfiles.d/*.conf\`; do
-    source $file
+    source \$file
 done
 TEXT

@@ -1,25 +1,34 @@
-[user]
-	name  = massat
-	email = masato.hirai@gmail.com
-
-[core]
-	excludesfile = ~/.gitignore
-	autocrlf = input
-
 [alias]
-	co = checkout
-	st = status
-	ci = commit
-	br = branch
+  co = checkout
+  st = status
+  ci = commit
+  br = branch
 
 [color]
-	ui = auto
+  ui = auto
+
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+
+[credential]
+  helper = store
+
+[fetch]
+  prune = true
+
+[init]
+  templatedir = ~/.git_template
+  defaultBranch = main
 
 [pager]
   log  = diff-highlight | less
   show = diff-highlight | less
   diff = diff-highlight | less
-[credential]
-	helper = osxkeychain
+
+[user]
+  name  = massat
+  email = masato.hirai@gmail.com
+
 [ghq]
-	root = /Users/massat/src
+  root = /Users/massat/src
